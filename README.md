@@ -22,11 +22,11 @@ The simulator reads the network environment and source parameters from a text fi
 **Following Lines (One for each source):** `<PACKET_RATE (pkts/s)> <MIN_SIZE (Bytes)> <MAX_SIZE (Bytes)> <WEIGHT> <START_TIME_FRACTION> <END_TIME_FRACTION>`
 
 *Example:*
-```text
+`text
 3 100.0 10000.0 50
 50.0 100 500 1.0 0.0 1.0
 100.0 100 500 2.0 0.0 1.0
-25.0 100 500 0.5 0.2 0.8```
+25.0 100 500 0.5 0.2 0.8`
 
 
 1. Compilation
