@@ -27,3 +27,30 @@ The simulator reads the network environment and source parameters from a text fi
 50.0 100 500 1.0 0.0 1.0
 100.0 100 500 2.0 0.0 1.0
 25.0 100 500 0.5 0.2 0.8
+
+
+1. Compilation
+Navigate to the project directory in your terminal and compile the simulators using g++ (requires C++11 support):
+# Compile the FCFS simulator
+g++ -std=c++11 fcfs_simulator.cpp -o fcf
+
+# Compile the WFQ simulator
+g++ -std=c++11 wfq_simulator.cpp -o wfq
+
+2. Running the Simulation
+Run the compiled executables by passing your configuration file as a command-line argument.
+
+# Run FCFS with input_a.txt
+./fcfs input_a.txt
+
+# Run WFQ with input_b.txt
+./wfq input_b.txt
+
+3. Understanding the Output Metrics
+For every run, the simulator generates a detailed output file. The results include:
+
+System-Level Metrics: Overall Server Utilization, Average Packet Delay, and overall Packet Drop Probability.
+
+Fairness: Jain's Fairness Index based on throughput (normalized by weight for the WFQ algorithm).
+
+Per-Source Statistics: Generated/Transmitted/Dropped counts, individual drop rates, average delays, and effective throughput (Bytes/sec).
