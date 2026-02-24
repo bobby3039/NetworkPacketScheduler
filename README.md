@@ -26,7 +26,7 @@ The simulator reads the network environment and source parameters from a text fi
 3 100.0 10000.0 50
 50.0 100 500 1.0 0.0 1.0
 100.0 100 500 2.0 0.0 1.0
-25.0 100 500 0.5 0.2 0.8
+25.0 100 500 0.5 0.2 0.8```
 
 
 1. Compilation
